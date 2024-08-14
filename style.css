@@ -71,6 +71,13 @@ h1 {
     margin: 5px auto;
     cursor: pointer;
 }
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .useful-links  {
     width: 50px;
     text-align: center;
@@ -135,4 +142,35 @@ h1 {
     .bubbles img:nth-child(7){
         animation-delay: 7s;
         width: 35px;
+    }
+
+    @media screen and (max-width: 600px) 
+    {
+       h1 {
+        font-size: 36px;
+        line-height: 50px;
+       }
+       .side-bar {
+        width: 100%;
+        height: 50px;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .social-links{
+        width: auto;
+        position: unset;
+        transform: none;
+    }
+    .menu {
+        width: 20px;
+        margin: 0;
+    }
+    }
+
+    @media  screen and (max-width: 900px) and (min-width: 600px) {
+        
     }
